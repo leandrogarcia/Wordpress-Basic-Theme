@@ -1,0 +1,32 @@
+{
+  "name": "wordpress-basic-theme",
+  "version": "1.0.0",
+  "description": "Wordpress starter theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrogarcia/Wordpress-Basic-Theme.git"
+  },
+  "author": "Leandro Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrogarcia/Wordpress-Basic-Theme/issues"
+  },
+  "homepage": "https://github.com/leandrogarcia/Wordpress-Basic-Theme#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-ug": "^1.0.6",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.52.1"
+  }
+}

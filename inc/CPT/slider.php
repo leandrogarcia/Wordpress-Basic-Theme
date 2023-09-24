@@ -133,7 +133,6 @@ function wbt_slider_pages(){
     $values  = get_post_custom( $post->ID );
     $slide    = isset( $values['WBTSlide'] ) ? $values['WBTSlide'] : '';
     $exibeTexto     = isset( $values['WBTexibe'] ) ? $values['WBTexibe'] : '';
-    $sliderTempo     = isset( $values['WBTsliderTempo'] ) ? $values['WBTsliderTempo'] : '';
     
     $taxonomies = array( 'slider-categoria');
     $args = array(
@@ -183,10 +182,6 @@ function wbt_slider_pages(){
             <option value="1" '.((isset($exibeTexto[0]) && $exibeTexto[0] =="1") ? "selected": "").'>Sim</option>
         </select>
     </p>
-    <p>
-        Escreva o tempo em milisegundos caso queira que o slider seja automático<br>
-        <input name="WBTsliderTempo" value="'.($sliderTempo[0] ?? "").'">
-    </p>
     ';
 }
 add_action( 'save_post', 'wbt_slider_pages_save' );
@@ -199,10 +194,6 @@ function wbt_slider_pages_save($post_id){
 
     if( isset( $_POST['exibeTexto'] ) ){
         update_post_meta( $post_id, 'exibeTexto',  $_POST['exibeTexto'] );
-    }
-
-    if( isset( $_POST['WBTsliderTempo'] ) ){
-        update_post_meta( $post_id, 'WBTsliderTempo',  $_POST['WBTsliderTempo'] );
     }
 
 }

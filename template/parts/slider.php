@@ -21,7 +21,7 @@ $sliderQuery = new WP_Query(
 <?php if ( $sliderQuery->have_posts() ) :?>
     <div class="slider">
         <div class="container">
-            <div class="swiper" <?php echo (!empty($slideTempo)) ? 'data-slide-interval="'.$slideTempo.'"' : '';?>>
+            <div class="swiper">
                 <div class="swiper-wrapper">
                     <?php while ( $sliderQuery->have_posts() ) : $sliderQuery->the_post(); ?>
 

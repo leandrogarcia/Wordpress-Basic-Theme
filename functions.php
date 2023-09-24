@@ -1,6 +1,7 @@
 <?php
 
 includeAllPHPFiles(dirname( __FILE__ ) ."/inc/setup");
+includeAllPHPFiles(dirname( __FILE__ ) ."/inc/CPT");
 
 function includeAllPHPFiles($dir){
     foreach( glob( "$dir/*" ) as $path ){

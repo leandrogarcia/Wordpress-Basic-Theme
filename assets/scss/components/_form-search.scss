@@ -1,0 +1,42 @@
+.form-search {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+
+    &:not(.active) {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+
+        label {
+            flex-grow: 1;
+
+            input {
+                width: 100%;
+                height: 36px;
+            }
+        }
+
+        input[type="submit"]{
+            flex: 0 0 150px;
+            background-color: $primary;
+            color: #fff;
+        }
+        
+        .search-mobile {
+            background-color: $primary;
+            border: 0;
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+        button.close-search{
+            border: 0;
+            background-color: transparent;
+        }
+    }
+}

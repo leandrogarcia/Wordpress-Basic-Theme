@@ -1,32 +1,36 @@
 {
-  "name": "wordpress-basic-theme",
+  "name": "wp-bird-child",
   "version": "1.0.0",
-  "description": "Wordpress starter theme",
-  "main": "gulpfile.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leandrogarcia/Wordpress-Basic-Theme.git"
+    "url": "git+ssh://git@bitbucket.org/agenciabond/wp-bird-child.git"
   },
-  "author": "Leandro Garcia",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leandrogarcia/Wordpress-Basic-Theme/issues"
+    "url": "https://bitbucket.org/agenciabond/wp-bird-child/issues"
   },
-  "homepage": "https://github.com/leandrogarcia/Wordpress-Basic-Theme#readme",
-  "dependencies": {
-    "bootstrap": "^5.2.3",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-ug": "^1.0.6",
-    "gulp-uglify": "^3.0.2"
-  },
+  "homepage": "https://bitbucket.org/agenciabond/wp-bird-child#readme",
   "devDependencies": {
-    "gulp-sass": "^5.1.0",
-    "node-sass": "^7.0.1",
-    "sass": "^1.52.1"
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "node-sass-glob-importer": "^5.3.2",
+    "postcss-loader": "^7.3.2",
+    "sass-loader": "^13.3.1",
+    "style-loader": "^3.3.3",
+    "swiper": "^9.3.2",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
   }
 }

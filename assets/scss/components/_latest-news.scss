@@ -1,0 +1,17 @@
+.latest-news {
+    margin-bottom: 30px;
+    
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .news {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+footer {
+    background-color: #eee;
+    padding: 20px 0;
+
+    .second {
+        text-align: right;
+
+        .social-networks {
+            display: flex;
+            gap: 5px;
+            justify-content: flex-end;
+        }
+    }
+}

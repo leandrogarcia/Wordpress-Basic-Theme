@@ -1,7 +1,9 @@
 <?php
+require('config.php');
 
 includeAllPHPFiles(dirname( __FILE__ ) ."/inc/setup");
 includeAllPHPFiles(dirname( __FILE__ ) ."/inc/CPT");
+includeAllPHPFiles(dirname( __FILE__ ) ."/inc/customize");
 
 function includeAllPHPFiles($dir){
     foreach( glob( "$dir/*" ) as $path ){

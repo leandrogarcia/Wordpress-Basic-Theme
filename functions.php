@@ -4,6 +4,7 @@ require('config.php');
 includeAllPHPFiles(dirname( __FILE__ ) ."/inc/setup");
 includeAllPHPFiles(dirname( __FILE__ ) ."/inc/CPT");
 includeAllPHPFiles(dirname( __FILE__ ) ."/inc/customize");
+includeAllPHPFiles(dirname( __FILE__ ) ."/inc/ajax");
 
 function includeAllPHPFiles($dir){
     foreach( glob( "$dir/*" ) as $path ){

@@ -1,0 +1,24 @@
+.container-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.load-more {
+    margin-bottom: 30px;
+    text-align: center;
+
+    a {
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        padding: 5px 20px;
+        text-decoration: none;
+        color: #333;
+        display: inline-block;
+    }
+}

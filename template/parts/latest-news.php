@@ -15,6 +15,9 @@
                     <?php get_template_part('template/parts/card','news', array('id' => get_the_ID()));?>
                 <?php endwhile;?>
             </div>
+            <div class="all">
+                <a href="<?php echo home_url();?>/noticias">Todas as notícias</a>
+            </div>
         </div>
     </div>
     <?php wp_reset_query();?>
